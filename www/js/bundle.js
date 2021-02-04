@@ -52,6 +52,8 @@
           prefix = "secret";
       } else if (chainId2.indexOf("akash") != -1) {
           prefix = "akash";
+      } else if (chainId2.indexOf("ice") != -1) {
+          prefix = "cosmos";
       }
 
       const cosmos = cosmosjs.network(window.lcd, chainId2);
